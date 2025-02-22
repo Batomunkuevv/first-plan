@@ -1,0 +1,11 @@
+.fp-button {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+        font-size: 17px;
+        line-height: 130%;
+    }
+}
