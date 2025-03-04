@@ -279,8 +279,8 @@ class FirstPlan {
                     break;
                 }
                 case "team": {
-                    const teamPrev = slider.closest('.team-block').querySelector('.arrows__arrow--prev');
-                    const teamNext = slider.closest('.team-block').querySelector('.arrows__arrow--next');
+                    const teamPrev = slider.closest('.container').querySelector('.arrows__arrow--prev');
+                    const teamNext = slider.closest('.container').querySelector('.arrows__arrow--next');
 
                     options = {
                         ...options,
