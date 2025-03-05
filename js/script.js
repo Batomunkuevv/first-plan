@@ -278,13 +278,38 @@ class FirstPlan {
 
                     break;
                 }
+                case "companies": {
+                    options = {
+                        ...options,
+                        spaceBetween: 8,
+                        slidesPerView: 2,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true
+                        },
+                        grid: {
+                            rows: 2,
+                            fill: "row",
+                        },
+                        breakpoints: {
+                            767: {
+                                spaceBetween: 0,
+                                grid: false,
+                                slidesPerView: "auto",
+                                enabled: false
+                            }
+                        }
+                    }
+
+                    break;
+                }
                 case "team": {
                     const teamPrev = slider.closest('.container').querySelector('.arrows__arrow--prev');
                     const teamNext = slider.closest('.container').querySelector('.arrows__arrow--next');
 
                     options = {
                         ...options,
-                        spaceBetween: 16,
+                        spaceBetween: 8,
                         navigation: {
                             prevEl: teamPrev,
                             nextEl: teamNext

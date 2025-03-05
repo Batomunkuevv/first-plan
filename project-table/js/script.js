@@ -5,6 +5,14 @@ const fillTable = () => {
             slug: 'homepage.html'
         },
         {
+            name: 'Блог',
+            slug: 'blog.html'
+        },
+        {
+            name: 'Команда',
+            slug: 'team.html'
+        },
+        {
             name: 'Член команды',
             slug: 'team-member.html'
         },
