@@ -278,6 +278,22 @@ class FirstPlan {
 
                     break;
                 }
+                case "other-projects": {
+                    const otherProjectsPrev = slider.closest('.other-projects').querySelector('.arrows__arrow--prev');
+                    const otherProjectsNext = slider.closest('.other-projects').querySelector('.arrows__arrow--next');
+
+                    options = {
+                        ...options,
+                        slidesPerView: 'auto',
+                        spaceBetween: 8,
+                        navigation: {
+                            prevEl: otherProjectsPrev,
+                            nextEl: otherProjectsNext
+                        }
+                    }
+
+                    break;
+                }
                 case "gallery": {
                     options = {
                         ...options,
