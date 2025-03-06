@@ -278,6 +278,29 @@ class FirstPlan {
 
                     break;
                 }
+                case "gallery": {
+                    options = {
+                        ...options,
+                        loop: true,
+                        centeredSlides: true,
+                        spaceBetween: 8,
+                        autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false
+                        },
+                        navigation: {
+                            prevEl: '.arrows__arrow--prev',
+                            nextEl: ".arrows__arrow--next"
+                        },
+                        breakpoints: {
+                            767: {
+                                breakpoints: 16
+                            }
+                        }
+                    }
+
+                    break;
+                }
                 case "companies": {
                     options = {
                         ...options,

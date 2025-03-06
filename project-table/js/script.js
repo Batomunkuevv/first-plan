@@ -17,6 +17,10 @@ const fillTable = () => {
             slug: 'team-member.html'
         },
         {
+            name: 'Статья',
+            slug: 'article.html'
+        },
+        {
             name: '404',
             slug: '404.html'
         },
