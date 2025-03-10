@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Первый план</title>
+
+  <link rel="stylesheet" href="css/main.min.css" />
+
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <header class="site-header site-header--projects">
+      <div class="site-header__overlay"></div>
+      <div class="site-header__container container">
+        <div class="site-header__body">
+          <a href="/homepage.html" class="site-header__logo logo">
+            <div class="logo__ibg ibg">
+              <img class="logo__image logo__image--white" src="images/logo-white.svg" alt="Логотип Первый План" title="Логотип Первый План" />
+              <img class="logo__image" src="images/logo.svg" alt="Логотип Первый План" title="Логотип Первый План" />
+            </div>
+          </a>
+          <nav class="site-header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="/projects.html" class="menu__link menu__link--header link link--m">проекты</a>
+              </li>
+              <li class="menu__item">
+                <a href="/team.html" class="menu__link menu__link--header link link--m">команда</a>
+              </li>
+              <li class="menu__item">
+                <a href="/homepage.html#principles" class="menu__link menu__link--header link link--m">принципы работы</a>
+              </li>
+              <li class="menu__item">
+                <a href="/homepage.html#geography" class="menu__link menu__link--header link link--m">география проектов</a>
+              </li>
+              <li class="menu__item">
+                <a href="/blog.html" class="menu__link menu__link--header link link--m">блог</a>
+              </li>
+              <li class="menu__item">
+                <a data-anchor href="#contacts" class="menu__link menu__link--header link link--m">контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="buttons" class="site-header__burger burger">
+            <div class="burger__line"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-page site-page--projects">
+      <sections class="projects">
+        <div class="container">
+          <div class="space-for-header">
+            <div class="projects__header">
+              <h1 class="projects__title h2">проекты</h1>
+              <form action="#" class="projects__filters filters">
+                <div class="filters__top">
+                  <input type="text" name="search" placeholder="Поиск" class="filters__search filters__search--desktop input" />
+                  <button type="button" class="filters__button">
+                    фильтры
+                    <span class="filters__button-icon"> </span>
+                  </button>
+                </div>
+                <div class="filters__body">
+                  <input type="text" name="search" placeholder="Поиск" class="filters__search filters__search--mobile input" />
+                  <ul data-accordion class="filters__list">
+                    <li data-fold class="filters__item">
+                      <button data-fold-btn data-filter="type" type="button" class="filters__dropdown dropdown">
+                        тип мероприятия
+                        <span class="dropdown__arrow">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.98528 0.757394C9.98528 0.481252 9.76142 0.257394 9.48528 0.257394L4.98528 0.257395C4.70914 0.257395 4.48528 0.481252 4.48528 0.757395C4.48528 1.03354 4.70914 1.25739 4.98528 1.25739L8.98528 1.25739L8.98528 5.25739C8.98528 5.53354 9.20914 5.75739 9.48528 5.75739C9.76142 5.75739 9.98528 5.53354 9.98528 5.25739L9.98528 0.757394ZM1.35355 9.59623L9.83883 1.11095L9.13173 0.403841L0.646447 8.88912L1.35355 9.59623Z" fill="currentColor" />
+                          </svg>
+                        </span>
+                      </button>
+                      <div data-fold-content class="filters__options filters__options--mobile">
+                        <ul class="filters__options-list">
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="event-type" value="фестиваль" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              фестиваль
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li data-fold class="filters__item">
+                      <button data-fold-btn data-filter="city" type="button" class="filters__dropdown dropdown">
+                        город
+                        <span class="dropdown__arrow">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.98528 0.757394C9.98528 0.481252 9.76142 0.257394 9.48528 0.257394L4.98528 0.257395C4.70914 0.257395 4.48528 0.481252 4.48528 0.757395C4.48528 1.03354 4.70914 1.25739 4.98528 1.25739L8.98528 1.25739L8.98528 5.25739C8.98528 5.53354 9.20914 5.75739 9.48528 5.75739C9.76142 5.75739 9.98528 5.53354 9.98528 5.25739L9.98528 0.757394ZM1.35355 9.59623L9.83883 1.11095L9.13173 0.403841L0.646447 8.88912L1.35355 9.59623Z" fill="currentColor" />
+                          </svg>
+                        </span>
+                      </button>
+                      <div data-fold-content class="filters__options filters__options--mobile">
+                        <ul class="filters__options-list">
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="city" value="архангельск" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              архангельск
+                            </label>
+                          </li>
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="city" value="москва" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              москва
+                            </label>
+                          </li>
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="city" value="Нижний Новгород" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              Нижний Новгород
+                            </label>
+                          </li>
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="city" value="санкт-петербург" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              санкт-петербург
+                            </label>
+                          </li>
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="city" value="архангельск" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              архангельск
+                            </label>
+                          </li>
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="city" value="москва" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              москва
+                            </label>
+                          </li>
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="city" value="Нижний Новгород" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              Нижний Новгород
+                            </label>
+                          </li>
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="city" value="санкт-петербург" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              санкт-петербург
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li data-fold class="filters__item">
+                      <button data-fold-btn type="button" data-filter="year" class="filters__dropdown dropdown">
+                        год
+                        <span class="dropdown__arrow">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.98528 0.757394C9.98528 0.481252 9.76142 0.257394 9.48528 0.257394L4.98528 0.257395C4.70914 0.257395 4.48528 0.481252 4.48528 0.757395C4.48528 1.03354 4.70914 1.25739 4.98528 1.25739L8.98528 1.25739L8.98528 5.25739C8.98528 5.53354 9.20914 5.75739 9.48528 5.75739C9.76142 5.75739 9.98528 5.53354 9.98528 5.25739L9.98528 0.757394ZM1.35355 9.59623L9.83883 1.11095L9.13173 0.403841L0.646447 8.88912L1.35355 9.59623Z" fill="currentColor" />
+                          </svg>
+                        </span>
+                      </button>
+                      <div data-fold-content class="filters__options filters__options--mobile">
+                        <ul class="filters__options-list">
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="year" value="2022" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              2022
+                            </label>
+                          </li>
+                          <li class="filters__option">
+                            <label class="filters__checkbox checkbox">
+                              <input type="checkbox" name="year" value="2024" class="visually-hidden" />
+                              <div class="checkbox__indicator"></div>
+                              2023
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="filters__all">
+                    <div data-filter="type" class="filters__options filters__options--desktop">
+                      <ul class="filters__options-list">
+                        <li class="filters__option">
+                          <label class="filters__checkbox checkbox">
+                            <input type="checkbox" name="event-type" value="фестиваль" class="visually-hidden" />
+                            <div class="checkbox__indicator"></div>
+                            фестиваль
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div data-filter="city" class="filters__options filters__options--desktop">
+                      <ul class="filters__options-list">
+                        <li class="filters__option">
+                          <label class="filters__checkbox checkbox">
+                            <input type="checkbox" name="city" value="архангельск" class="visually-hidden" />
+                            <div class="checkbox__indicator"></div>
+                            архангельск
+                          </label>
+                        </li>
+                        <li class="filters__option">
+                          <label class="filters__checkbox checkbox">
+                            <input type="checkbox" name="city" value="москва" class="visually-hidden" />
+                            <div class="checkbox__indicator"></div>
+                            москва
+                          </label>
+                        </li>
+                        <li class="filters__option">
+                          <label class="filters__checkbox checkbox">
+                            <input type="checkbox" name="city" value="Нижний Новгород" class="visually-hidden" />
+                            <div class="checkbox__indicator"></div>
+                            Нижний Новгород
+                          </label>
+                        </li>
+                        <li class="filters__option">
+                          <label class="filters__checkbox checkbox">
+                            <input type="checkbox" name="city" value="санкт-петербург" class="visually-hidden" />
+                            <div class="checkbox__indicator"></div>
+                            санкт-петербург
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div data-filter="year" class="filters__options filters__options--desktop">
+                      <ul class="filters__options-list">
+                        <li class="filters__option">
+                          <label class="filters__checkbox checkbox">
+                            <input type="checkbox" name="year" value="2022" class="visually-hidden" />
+                            <div class="checkbox__indicator"></div>
+                            2022
+                          </label>
+                        </li>
+                        <li class="filters__option">
+                          <label class="filters__checkbox checkbox">
+                            <input type="checkbox" name="year" value="2024" class="visually-hidden" />
+                            <div class="checkbox__indicator"></div>
+                            2023
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+              </form>
+            </div>
+            <div class="projects__applied-filters applied-filters">
+              <li class="applied-filters__item">
+                Москва
+                <button type="button" class="applied-filters__item-remove">
+                  <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.203125" y="1.46484" width="1" height="11" transform="rotate(-45 0.203125 1.46484)" fill="currentColor" />
+                    <rect x="0.203125" y="8.53516" width="11" height="1" transform="rotate(-45 0.203125 8.53516)" fill="currentColor" />
+                  </svg>
+                </button>
+              </li>
+              <li class="applied-filters__item">
+                2022
+                <button type="button" class="applied-filters__item-remove">
+                  <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.203125" y="1.46484" width="1" height="11" transform="rotate(-45 0.203125 1.46484)" fill="currentColor" />
+                    <rect x="0.203125" y="8.53516" width="11" height="1" transform="rotate(-45 0.203125 8.53516)" fill="currentColor" />
+                  </svg>
+                </button>
+              </li>
+              <li class="applied-filters__item">
+                фестиваль
+                <button type="button" class="applied-filters__item-remove">
+                  <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.203125" y="1.46484" width="1" height="11" transform="rotate(-45 0.203125 1.46484)" fill="currentColor" />
+                    <rect x="0.203125" y="8.53516" width="11" height="1" transform="rotate(-45 0.203125 8.53516)" fill="currentColor" />
+                  </svg>
+                </button>
+              </li>
+              <li class="applied-filters__item applied-filters__item--reset">
+                сбросить все
+                <span class="applied-filters__item-remove applied-filters__item-remove--in-reset">
+                  <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.203125" y="1.46484" width="1" height="11" transform="rotate(-45 0.203125 1.46484)" fill="currentColor" />
+                    <rect x="0.203125" y="8.53516" width="11" height="1" transform="rotate(-45 0.203125 8.53516)" fill="currentColor" />
+                  </svg>
+                </span>
+              </li>
+            </div>
+            <ul class="projects__list">
+              <li class="projects__item">
+                <article class="project-card">
+                  <a href="/project.html" class="project-card__link">
+                    <div class="project-card__top">
+                      <div class="project-card__year caption caption--s">2024</div>
+                      <div class="project-card__city caption caption--s">петропавловск-камчатский</div>
+                    </div>
+                    <div class="project-card__image">
+                      <div class="project-card__image-ibg ibg">
+                        <img src="images/projects/01.jpg" alt="Project" title="Project" />
+                      </div>
+                    </div>
+                    <h3 class="project-card__title caption caption--m">80-летие МПО - гидроприбор</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="project-card">
+                  <a href="/project.html" class="project-card__link">
+                    <div class="project-card__top">
+                      <div class="project-card__year caption caption--s">2024</div>
+                      <div class="project-card__city caption caption--s">Нижний Новгород</div>
+                    </div>
+                    <div class="project-card__image">
+                      <div class="project-card__image-ibg ibg">
+                        <img src="images/projects/02.jpg" alt="Project" title="Project" />
+                      </div>
+                    </div>
+                    <h3 class="project-card__title caption caption--m">Гала-шоу «студенческая весна»</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="project-card">
+                  <a href="/project.html" class="project-card__link">
+                    <div class="project-card__top">
+                      <div class="project-card__year caption caption--s">2024</div>
+                      <div class="project-card__city caption caption--s">Санкт-петербург</div>
+                    </div>
+                    <div class="project-card__image">
+                      <div class="project-card__image-ibg ibg">
+                        <img src="images/projects/03.jpg" alt="Project" title="Project" />
+                      </div>
+                    </div>
+                    <h3 class="project-card__title caption caption--m">ххх турнир памяти пожарных</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="project-card">
+                  <a href="/project.html" class="project-card__link">
+                    <div class="project-card__top">
+                      <div class="project-card__year caption caption--s">2024</div>
+                      <div class="project-card__city caption caption--s">Владивосток</div>
+                    </div>
+                    <div class="project-card__image">
+                      <div class="project-card__image-ibg ibg">
+                        <img src="images/projects/04.jpg" alt="Project" title="Project" />
+                      </div>
+                    </div>
+                    <h3 class="project-card__title caption caption--m">китайский новый год 2024</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="project-card">
+                  <a href="/project.html" class="project-card__link">
+                    <div class="project-card__top">
+                      <div class="project-card__year caption caption--s">2024</div>
+                      <div class="project-card__city caption caption--s">Красноярск</div>
+                    </div>
+                    <div class="project-card__image">
+                      <div class="project-card__image-ibg ibg">
+                        <img src="images/projects/05.jpg" alt="Project" title="Project" />
+                      </div>
+                    </div>
+                    <h3 class="project-card__title caption caption--m">Мегашоу «Елка телеканала МУЛЬТ»</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="project-card">
+                  <a href="/project.html" class="project-card__link">
+                    <div class="project-card__top">
+                      <div class="project-card__year caption caption--s">2024</div>
+                      <div class="project-card__city caption caption--s">Москва</div>
+                    </div>
+                    <div class="project-card__image">
+                      <div class="project-card__image-ibg ibg">
+                        <img src="images/projects/06.jpg" alt="Project" title="Project" />
+                      </div>
+                    </div>
+                    <h3 class="project-card__title caption caption--m">одаренные дети — надежда россии</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="project-card">
+                  <a href="/project.html" class="project-card__link">
+                    <div class="project-card__top">
+                      <div class="project-card__year caption caption--s">2024</div>
+                      <div class="project-card__city caption caption--s">Новокузнецк</div>
+                    </div>
+                    <div class="project-card__image">
+                      <div class="project-card__image-ibg ibg">
+                        <img src="images/projects/07.jpg" alt="Project" title="Project" />
+                      </div>
+                    </div>
+                    <h3 class="project-card__title caption caption--m">квартирник родиона газманова</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="project-card">
+                  <a href="/project.html" class="project-card__link">
+                    <div class="project-card__top">
+                      <div class="project-card__year caption caption--s">2024</div>
+                      <div class="project-card__city caption caption--s">Новороссийск</div>
+                    </div>
+                    <div class="project-card__image">
+                      <div class="project-card__image-ibg ibg">
+                        <img src="images/projects/08.jpg" alt="Project" title="Project" />
+                      </div>
+                    </div>
+                    <h3 class="project-card__title caption caption--m">золотой урожай 2023</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="project-card">
+                  <a href="/project.html" class="project-card__link">
+                    <div class="project-card__top">
+                      <div class="project-card__year caption caption--s">2024</div>
+                      <div class="project-card__city caption caption--s">Нижний Новгород</div>
+                    </div>
+                    <div class="project-card__image">
+                      <div class="project-card__image-ibg ibg">
+                        <img src="images/projects/09.jpg" alt="Project" title="Project" />
+                      </div>
+                    </div>
+                    <h3 class="project-card__title caption caption--m">финал конкурса «большая перемена»</h3>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </sections>
+
+    </main>
+    <footer id="contacts" class="site-footer site-footer--blue">
+      <div class="container">
+        <div class="site-footer__body space-for-header space-for-header--big">
+          <div class="site-footer__left">
+            <a href="/homepage.html" class="site-footer__logo logo logo--white">
+              <div class="logo__ibg ibg">
+                <img class="logo__image logo__image--white" src="images/logo-white.svg" alt="Логотип Первый План" title="Логотип Первый План" />
+              </div>
+            </a>
+            <nav class="menu menu--white">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="/projects.html" class="menu__link link link--m">проекты</a>
+                </li>
+                <li class="menu__item">
+                  <a href="/team.html" class="menu__link link link--m">команда</a>
+                </li>
+                <li class="menu__item">
+                  <a href="/homepage.html#principles" class="menu__link link link--m">принципы работы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="/homepage.html#geography" class="menu__link link link--m">география проектов</a>
+                </li>
+                <li class="menu__item">
+                  <a href="/blog.html" class="menu__link link link--m">блог</a>
+                </li>
+                <li class="menu__item">
+                  <a data-anchor href="#contacts" class="menu__link link link--m">контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="site-footer__right">
+            <div class="site-footer__contacts">
+              <ul class="site-footer__socials socials">
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img data-lozad src="images/placeholder.png" data-src="images/icons/socials/vk.svg" alt="VK" title="VK" />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img data-lozad src="images/placeholder.png" data-src="images/icons/socials/instagram.svg" alt="Instagram" title="Instagram" />
+                  </a>
+                </li>
+              </ul>
+              <ul class="site-footer__contacts-list">
+                <li class="site-footer__contact">
+                  <a href="tel:+79818972340" class="site-footer__contact-link link link--white link--m">+79818972340</a>
+                </li>
+                <li class="site-footer__contact">
+                  <a href="mailto:a.smolkov@bk.ru" class="site-footer__contact-link link link--white link--m">a.smolkov@bk.ru</a>
+                </li>
+              </ul>
+            </div>
+            <a href="https://si-team.ru/" target="_blank" class="site-footer__creator site-footer__creator--desktop link link--white link--s">сделано в si-team</a>
+            <p class="site-footer__copyright site-footer__copyright--desktop text text--s">
+              &copy;&nbsp;Все материалы являются объектами авторского права.
+              <br />
+              Незаконное копирование и&nbsp;использование без письменного разрешения правообладателя запрещено
+            </p>
+            <p class="site-footer__instagram-footnote description">
+              * instagram Входит в&nbsp;состав Meta, запрещенной на&nbsp;территории Российской Федерации
+            </p>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p class="site-footer__copyright site-footer__copyright--mobile text text--s">
+            &copy;&nbsp;Все материалы являются объектами авторского права.
+            <br />
+            Незаконное копирование и&nbsp;использование без письменного разрешения правообладателя запрещено
+          </p>
+          <a href="https://si-team.ru/" target="_blank" class="site-footer__creator site-footer__creator--mobile link link--s">сделано в si-team</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script defer src="js/lozad.min.js"></script>
+  <script defer src="js/script.js"></script>
+</body>
+
+</html>
